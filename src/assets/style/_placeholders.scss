@@ -1,0 +1,20 @@
+// Pour appeler un placeholder
+// @extend %flex-center-el;
+
+%section-accueil {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+%flex-center-el {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%grid-center-el {
+  display: grid;
+  place-items: center;
+}

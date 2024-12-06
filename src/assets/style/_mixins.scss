@@ -1,0 +1,23 @@
+// A utiliser qu'avec des paramètres
+// Pour appeler un mixin
+// @include pseudo-el(block, absolute, "")
+
+@mixin pseudo-el($display: block, $position: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $position;
+}
+
+@mixin text-overflow-hidden($max-width) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: $max-width;
+}
+
+@mixin paragraph-overflow-hidden($number_of_line) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: $number_of_line;
+  -webkit-box-orient: vertical;
+}
